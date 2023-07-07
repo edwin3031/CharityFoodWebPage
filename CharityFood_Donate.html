@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-with, initial-scale=1.0">
+    <title>Charity Food - Donate</title>   
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilosTexto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        <section class="flex-container">
+            <div class="caja">
+                <h4><img border="0px" src="media/Accountbutton.png" height="57px" width="179px" onclick="opennewlogin()"> </img></h4> <br> 
+            </div>
+            <div class="caja">
+                <a href="CharityFood_PageNotFound.html"><img id="faqimg" border="0px" src="media/FAQButton.png" height="57px" width="143px"> </img></a>  
+            </div>
+            <div class="caja">
+                <h4 id="lang">Languaje:English</h4>
+            </div>
+     </section>
+    </header>
+    <section class="flex-container" id="header">
+        <div class="caja2">
+         <a href="index.html"><img border="0px" src="media/charityfood_logo.png" height="83px" width="97px"></img></a>
+         <section>
+            <a href="index.html"" class ="searchbarletter"><h3>Home</h3></a>
+            <a  href="CharityFood_About_Us.html" class ="searchbarletter"><h3>About us</h3></a>
+            <a  href="CharityFood_Partners.html" class ="searchbarletter"><h3 >Partners</h3> </a>
+            <a  href="CharityFood_Events.html" class ="searchbarletter"><h3>Events</h3></a>
+            <a  href="CharityFood_Media.html" class ="searchbarletter"><h3>Media</h3></a>
+            <a  href="CharityFood_Newsletter.html" class ="searchbarletter"><h3>Newsletter</h3></a>
+            <a  href="CharityFood_Blog.html" class ="searchbarletter"><h3>Blog</h3> </a>
+             </section>
+         <a id="donatebutton" href="CharityFood_Donate.html"><h3><img border="0px" src="media/Donate_Boton.png" height="51px" width="128px"> </img></h3></a>
+         </div>
+      </section>
+
+<!--=================================================================================================================================-->
+<div class="ful-login" id="loginbox">
+    <div id="login">
+        <div id="loginhome">
+            <img border="0px" src="media/image21.png" height="93px" width="111px" id="image21"> </img><br>
+        </div>
+        <div class="flex-container">
+            
+             <div class="caja12" id="greyletter" onclick="opensignup()"><h3  class="textologin" >Sign up</h3></div>
+             <div class="caja12"><h3>Login</h3></div>
+            
+        </div>
+         <br>
+         <form action="" id="loginform">
+            <div class="loginbox">
+            <label for="">Email</label> <br>
+            <input type="text" class="textbox" id="email"><br><br>
+            <label for="">Password</label> <br>
+            <input type="password" class="textbox" id="password"> <br> <br>
+            <p>Dont remember your password?</p> <br> <br>
+            <p class="warnings" id="warnings"></p>
+            </div>
+           <button type="submit" class="loginbutton">Log in</button>
+           
+           </form>
+    </div>
+    <span onclick="closelogin()">X</span>
+</div>
+
+
+<div class="ful-login" id="signupbox">
+    <div id="signup">
+        <div id="loginhome">
+            <img border="0px" src="media/image21.png" height="93px" width="111px" id="image21"></img><br>
+        </div>
+        <div class="flex-container">
+            
+             <div class="caja12">Sign up</div>
+             <div class="caja12" id="greyletter" class="textologin" onclick="openlogin()">Log in</div>
+            
+        </div>
+        <br>
+        <form action="" id="signupform">
+            <div class="loginbox">
+            <label for="">Email</label>
+            <input type="text" class="textbox" id="newemail"><br><br>
+            <label for="">Password</label>
+            <input type="password" class="textbox" id="newpassword"> <br> <br>
+            <label for="">First Name</label>
+            <input type="text" class="textbox" id="firstname"> <br> <br>
+            <label for="">Last Name</label>
+            <input type="text" class="textbox" id="lastname"> <br> <br>
+            <p class="warnings" id="warnings2"></p>
+            </div>
+            <button type="submit" class="loginbutton">Sign Up</button>
+           </form>
+    
+        </div>
+    <span onclick="closelogin()">X</span>
+</div>
+
+<!--=================================================================================================================================-->
+<div class="ful-login" id="thankyoubox">
+    <div id="thankyou">
+        <div id="loginhome">
+            <img border="0px" src="media/image21.png" height="93px" width="111px" id="image21"> </img><br>
+        </div>
+        <div class="flex-container" id="thankyoubox2">
+            <h2 class="greenletter">Thank you for supporting CharityFood</h2>
+        </div>
+         <br>
+         <form action="" id="thankyouform">
+            <input type="button" value="Close" class="loginbutton" onclick="closethankyou()">
+           </form>
+    </div>
+</div>
+<!--=================================================================================================================================-->
+<h2 class="texttile2">Thank you for supporting critical resources and programs for the entire latino migrant community!</h2>
+      
+     <form action="#">
+        <div class="flex-container">
+        <div class="caja8" id="donate2">
+    <label for="">Include a tribute</label>
+    <input type="checkbox" id="tribute"> <br> 
+    <label for="">In memory of</label>
+    <input type="text" class="textbox" id="inmemoryof">
+        </div>
+        <div class="caja8" id="donate1">
+            <label for="">Donation Amount</label>
+        <input type="number" class="textbox" id="donationamount">
+        <label for="">Event Donate</label>
+        <select name="" id="selectEvent" class="textbox">
+            <option value="Miami Valley">Miami Valley</option>
+            <option value="Boca Grande">Boca grande</option>
+            <option value="Building dreams">Building dreams</option>
+
+        </select>
+            </div>
+    </div>
+     </form>
+     <div class="flex-container2" id="payplace">
+        <div class="caja7" id="donate3">
+            <h2>Payment info</h2> <br>
+            <img src="media/Creditcardbutton.png" class="paybutton"><img>
+            <img src="media/paypalbutton.png" class="paybutton" onclick="paypalthankyou()">
+        <div class="caja14" id="paymentinfo">
+    <form action="#" id="donationform">
+        <label for="">Address</label> <br>
+        <input type="text" class="paybox" id="address"><br><br>
+        <label for="">Name on card</label> <br>
+        <input type="text" class="paybox" id="nameoncard"><br><br>
+        <label for="">Card number</label><br>
+        <input type="Number" class="paybox" id="cardnumber"><br><br>
+        <input type="Number" class="cardnumber" placeholder="MM" id="month"> <input type="Number" class="cardnumber" placeholder="YYYY" id="year"> <input type="Number" class="cardnumber" placeholder="CV" id="cv"> <br> <br>
+        <label for="">Message</label> <br>
+        <input type="text" class="paybox" id="messagebox"><br><br>
+
+        <p class="warnings" id="warningsdonate"></p>
+
+        <input type="button" value="Donate Now" class="donatebutton" onclick="validatedonation()">
+    </form>
+        </div>
+    </div>   
+    </div>
+     <footer>
+        <nav id ="menu">
+            <div class="flex-container" id="menufooter">
+                <div class="caja4">
+                        <a href="https://www.facebook.com" target="_blank"> <img border="0px" src="media/facebook.png" height="73px" width="73px"></img></a>
+                        <a href="https://twitter.com" target="_blank"><img border="0px" src="media/twitter.png" height="73px" width="73px"></img></a>
+                        <a href="https://linkedin.com" target="_blank"><img border="0px" src="media/linkedin.png" height="73px" width="73px"></img></a>
+                        <a href="https://www.instagram.com" target="_blank"><img border="0px" src="media/instagram.png" height="73px" width="73px"></img></a>
+                 </div>
+                 <div class="caja4">
+                    <ul id="listaprincipal">
+                        <a href="CharityFood_PageNotFound.html" id="linkfooter">
+                        <li class="lista">About CharityFood</li>
+                        <li class="lista">Mission and Vision</li>
+                        <li class="lista">History</li>
+                        <li class="lista">Supporters</li>
+                        <li class="lista">Policies</li>
+                        <li class="lista">Contact us</li>
+                        <li class="lista">Terms of use</li>
+                        </a>
+                    </ul>
+                </div>
+            
+
+        </div>
+        </nav>
+        <div class="flex-container2" id="copy">
+            <div class="caja3">
+                <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"  id="copylink">CharityFood Foundation &copy; 2023 All Rights Reserved.</a>
+            </div>
+            
+        </div>
+        
+     </footer>
+<script src="validarlogin.js"></script>
+</body>
+</html>

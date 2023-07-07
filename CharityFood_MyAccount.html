@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-with, initial-scale=1.0">
+    <title>Charity Food - Home</title>   
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilosTexto.css">
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="myaccountbody">
+    <header> 
+            <section class="flex-container">
+                <div class="caja">
+                    <a href="CharityFood_MyProfile.html"><h4><img border="0px" src="media/Accountbutton.png" height="57px" width="179px"> </img></h4> <br></a>    
+                </div>
+                <div class="caja">
+                    <a href="CharityFood_PageNotFound.html"><img id="faqimg" border="0px" src="media/FAQButton.png" height="57px" width="143px"> </img></a>  
+                </div>
+                <div class="caja">
+                    <h4 id="lang">Languaje:English</h4>
+                </div>
+         </section>
+    </header>
+     <section class="flex-container" id="header">
+       <div class="caja2">
+        <a href="index.html"><img border="0px" src="media/charityfood_logo.png" height="83px" width="97px"></img></a>
+        <section>
+            <a href="index.html" class ="searchbarletter"><h3>Home</h3></a>
+            <a  href="CharityFood_About_Us.html" class ="searchbarletter"><h3>About us</h3></a>
+            <a  href="CharityFood_Partners.html" class ="searchbarletter"><h3 >Partners</h3> </a>
+            <a  href="CharityFood_Events.html" class ="searchbarletter"><h3>Events</h3></a>
+            <a  href="CharityFood_Media.html" class ="searchbarletter"><h3>Media</h3></a>
+            <a  href="CharityFood_Newsletter.html" class ="searchbarletter"><h3>Newsletter</h3></a>
+            <a  href="CharityFood_Blog.html" class ="searchbarletter"><h3>Blog</h3> </a>
+             </section>
+        <a id="donatebutton" href="CharityFood_Donate.html"><h3><img border="0px" src="media/Donate_Boton.png" height="51px" width="128px"> </img></h3></a>
+        </div>
+     </section>
+     <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+     <div class="ful-img" id="fulimgbox">
+        <video id="webCam" autoplay playsinlne width="800" height="600"></video>
+        <canvas id="canvas"></canvas>
+        <a download onclick="takeAPicture()"><img src="media/camerabutton.png" height="100px" width="100px"></a>
+        <span onclick="closeImg()">X</span>
+    </div>
+    <div id="lololol">
+        <h2 id="titleaccount">Please tell us more about yourself so we can customize the information that is most valuable to you.</h2>
+    </div>
+        
+        <div class="flex-container2" id="accountcontainer">
+            
+            <h1>My Account</h1> 
+            <div class="flex-container4" id="newphotobox">
+                Take New Photo <img src="media/camerabutton.png"  height="50px" width="50px" onclick="openFulImg()">
+            </div>
+            
+            <div class="flex-container4">
+                <div id="notedit" class="grid-layout-acc">
+                    
+                    <div class="cajaeventsaccount">
+                        <h4>First Name <br>Last Name <br>Birthdate <br> Gender <br>Race/Ethnicity <br>Primary Country <br>Primary Street <br>Primary City <br>Mailing State <br>Primary Zip/Postal Code <br>Preferred Email <br>Work Email <br>Personal Email <br>Preferred Phone <br>Mobile <br>Home Phone <br>Work Phone </h4>
+                    </div>
+
+                    <div class="cajaeventsaccount">
+                        <h4 id="Firstname">Guillermo <br></h4>
+                        <h4 id="Lastname">Perez <br></h4>
+                        <h4 id="birthdate">2003-03-29<br></h4> 
+                        <h4 id="gender">Male<br></h4>
+                        <h4 id="race_ethhnicity">Nicaraguan<br></h4>
+                        <h4 id="primarycountry">Nicaragua <br></h4>
+                        <h4 id="primarystreet">Calle 13 <br></h4>
+                        <h4 id="primartycity">Managua <br></h4>
+                        <h4 id="mailingstate">Managua <br></h4>
+                        <h4 id="primatypostal">11902 <br></h4>
+                        <h4 id="preferredemail">gp2933@gmail.com <br></h4>
+                        <h4 id="workemail">guillermo.perez40u@std.uni.edu.ni <br></h4>
+                        <h4 id="personalemail">gp2933@gmail.com <br></h4>
+                        <h4 id="preferredphone">45675432 <br></h4>
+                        <h4 id="mobile">45675432 <br></h4>
+                        <h4 id="homephone">45675432 <br></h4>
+                        <h4 id="workphone">45675432</h4>
+                    </div>
+
+                    <div class="cajaeventsaccount">
+                        <img src="media/editbutton.png" onclick="openedit()" class="editbutton">
+                    </div>
+
+                </div>
+
+                <div id="editaccount" class="grid-layout-acc">
+                    <div class="cajaeventsaccount">
+                        <h4>First Name <br>Last Name <br>Birthdate <br> Gender <br>Race/Ethnicity <br>Primary Country <br>Primary Street <br>Primary City <br>Mailing State <br>Primary Zip/Postal Code <br>Preferred Email <br>Work Email <br>Personal Email <br>Preferred Phone <br>Mobile <br>Home Phone <br>Work Phone </h4>
+                    </div>
+
+                    <div class="cajaeventsaccount">
+                        <form action="#" id="donationform">
+                            <input type="text" class="paybox" id="FirstNameBox"><br>
+                            <input type="text" class="paybox" id="LastnameBox"><br>
+                            <input type="date" class="paybox" id="Birthdatebox"><br>
+                            <select name="" id="selectgender" class="textbox">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <input type="text" class="paybox" id="Race_Etchnicitybox"><br>
+                            <input type="text" class="paybox" id="Primary_Countrybox"><br>
+                            <input type="text" class="paybox" id="Primary_streetbox"><br>
+                            <input type="text" class="paybox" id="Primary_citybox"><br>
+                            <input type="text" class="paybox" id="Mailing_statebox"><br>
+                            <input type="number" class="paybox" id="Primary_Zip_Codebox"><br>
+                            <input type="text" class="paybox" id="emailbox"><br>
+                            <input type="text" class="paybox" id="workemailbox"><br>
+                            <input type="text" class="paybox" id="personalemailbox"><br>
+                            <input type="Number" class="paybox" id="phonebox"><br>
+                            <input type="number" class="paybox" id="mobilebox"><br>
+                            <input type="number" class="paybox" id="homephonebox"><br>
+                            <input type="Number" class="paybox" id="workphonebox"><br>
+                            <p class="warnings" id="warningsdonate"></p>
+                    
+                        </form>
+                    </div>
+                    <div class="cajaeventsaccount">
+                        <img src="media/save button.png" onclick="openview()" class="editbutton">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <div class="flex-container2">
+     <footer>
+        <nav id ="menu">
+            <div class="flex-container" id="menufooter">
+                <div class="caja4">
+                        <a href="https://www.facebook.com" target="_blank"> <img border="0px" src="media/facebook.png" height="73px" width="73px"></img></a>
+                        <a href="https://twitter.com" target="_blank"><img border="0px" src="media/twitter.png" height="73px" width="73px"></img></a>
+                        <a href="https://linkedin.com" target="_blank"><img border="0px" src="media/linkedin.png" height="73px" width="73px"></img></a>
+                        <a href="https://www.instagram.com" target="_blank"><img border="0px" src="media/instagram.png" height="73px" width="73px"></img></a>
+                 </div>
+                 <div class="caja4">
+                    <ul id="listaprincipal">
+                        <a href="CharityFood_PageNotFound.html" id="linkfooter">
+                        <li class="lista">About CharityFood</li>
+                        <li class="lista">Mission and Vision</li>
+                        <li class="lista">History</li>
+                        <li class="lista">Supporters</li>
+                        <li class="lista">Policies</li>
+                        <li class="lista">Contact us</li>
+                        <li class="lista">Terms of use</li>
+                        </a>
+                    </ul>
+                </div>
+            
+
+        </div>
+        </nav>
+        <div class="flex-container2" id="copy">
+            <div class="caja3">
+                <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"  id="copylink">CharityFood Foundation &copy; 2023 All Rights Reserved.</a>
+            </div>
+            
+        </div>
+        
+     </footer>
+<script src="validaraccount.js"></script>
+<script>
+const fulImgBox = document.getElementById("fulimgbox")
+fulImg = document.getElementById("fulImg")
+
+//=======================================================================
+const webCamElement = document.getElementById("webCam");
+const canvasElement = document.getElementById("canvas");
+const webcam = new Webcam(webCamElement, "user", canvasElement);
+function openFulImg(){
+    fulImgBox.style.display = "flex"
+    webcam.start();
+}
+
+function closeImg(){
+    fulImgBox.style.display = "none";
+    webCamElement.style.display = "flex";
+    canvasElement.style.display = "none";
+    webcam.stop();
+}
+function takeAPicture(){
+    let picture = webcam.snap();
+    document.querySelector("a").href = picture;
+    canvasElement.style.display = "flex";
+    webCamElement.style.display = "none";
+}
+
+
+</script>
+</body>
+</html>
